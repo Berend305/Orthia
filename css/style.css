@@ -1,0 +1,459 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Algemene achtergrondkleur */
+    color: #333; /* Algemene tekstkleur */
+}
+
+header {
+    background-color: #f4de71; /* Donkere achtergrond voor header */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #e0e0e0;
+}
+
+header nav img.logo {
+    height: 50px; /* Pas de hoogte van het logo aan */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #0057fe;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0046d6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+a {
+    color: #0057fe;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.action-buttons a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons a.view {
+    background-color: #007bff; /* Blauw voor Bekijk */
+}
+
+.action-buttons a.edit {
+    background-color: #28a745; /* Groen voor Wijzig */
+}
+
+.action-buttons a.delete {
+    background-color: #dc3545; /* Rood voor Verwijder */
+}
+
+.action-buttons a:hover {
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0057fe;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Specifieke stijlen voor de index pagina */
+.index-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8; /* Lichte achtergrond voor betere zichtbaarheid */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.index-container h1 {
+    color: #0057fe; /* Primaire kleur voor de kop */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.index-container p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Specifieke stijlen voor de login en registratie pagina's */
+.auth-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+    color: #0057fe;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-container form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.auth-container form button {
+    background-color: #0057fe;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container form button:hover {
+    background-color: #0046d6;
+}
+
+/* Specifieke stijlen voor de dashboard pagina */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.dashboard-container h1 {
+    color: #0057fe;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.dashboard-container .links-container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.dashboard-container .link-box {
+    flex: 1;
+    padding: 50px;
+    background-color: #f4de71; /* Gele kleur */
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+}
+
+.dashboard-container .link-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.dashboard-container .link-box.blue {
+    background-color: #0057fe;
+}
+
+.dashboard-container .link-box.blue:hover {
+    background-color: #0046d6;
+}
+
+.dashboard-container .link-box.yellow {
+    background-color: #f4de71;
+}
+
+.dashboard-container .link-box.yellow:hover {
+    background-color: #e3c75e;
+}
+
+/* Specifieke stijlen voor de tickets pagina */
+.tickets-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.tickets-container h1 {
+    color: #0057fe;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.tickets-container p {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.tickets-container .new-ticket-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0057fe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.tickets-container .new-ticket-btn:hover {
+    background-color: #0046d6;
+}
+
+.tickets-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tickets-container th, .tickets-container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.tickets-container th {
+    background-color: #f4de71;
+    font-weight: bold;
+    color: #333;
+}
+
+.tickets-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tickets-container .action-buttons a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tickets-container .action-buttons a.view {
+    background-color: #007bff; /* Blauw voor Bekijk */
+}
+
+.tickets-container .action-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* Specifieke stijlen voor de create ticket pagina */
+.create-ticket-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.create-ticket-container h2 {
+    color: #0057fe;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.create-ticket-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-ticket-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-ticket-container form input,
+.create-ticket-container form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.create-ticket-container form button {
+    background-color: #0057fe;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-ticket-container form button:hover {
+    background-color: #0046d6;
+}
+
+/* Ticket details stijlen */
+.ticket-details-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-details-h1 {
+    color: #0057fe;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.ticket-details-container p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.ticket-details-container .status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.ticket-details-container .status.open {
+    background-color: #007bff;
+}
+
+.ticket-details-container .status.bezig {
+    background-color: #ffc107;
+}
+
+.ticket-details-container .status.opgelost {
+    background-color: #28a745;
+}
+
+.ticket-details-container .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.ticket-details-container .btn-back {
+    background-color: #6c757d;
+}
